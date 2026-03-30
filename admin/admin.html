@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+
+<body>
+
+<h1 class="admin-text">Admin Panel</h1>
+
+<!-- LOGIN -->
+<div id="loginBox">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+
+  <h2>Add Result</h2>
+  <div class="form-grid">
+
+  <input type="text" id="name" placeholder="Student Name">
+
+  <input type="file" id="file">
+
+  <input type="text" id="rank" placeholder="Rank">
+
+  <input type="number" id="order" placeholder="Order">
+
+  <select id="type" class="form-full">
+    <option value="jee">JEE</option>
+    <option value="neet">NEET</option>
+    <option value="board10">Class 10</option>
+    <option value="board12">Class 12</option>
+  </select>
+
+</div>
+
+<button onclick="addResult()">Add Student</button>
+
+
+
+  <h2>All Students</h2>
+
+<table border="1" id="dataTable">
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Name</th>
+      <th>Rank</th>
+      <th>Type</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody id="tableBody">
+  </tbody>
+</table>
+
+<h2>Add Notice</h2>
+
+<input type="text" id="noticeText" placeholder="Enter Notice">
+<button onclick="addNotice()">Add Notice</button>
+
+</div>
+
+
+
+<!-- 🔥 SCRIPTS HERE (BOTTOM) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="/js/admin.js"></script>
+
+</body>
+</html>

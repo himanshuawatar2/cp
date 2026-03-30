@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choudhary Pathshala</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="container navbar-inner">
+
+    <div class="logo">CP <span>Pathshala</span></div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#results">Results</a>
+      <a href="about.html">About</a>
+      <a href="#footer">Contact</a>
+    </div>
+
+    <div class="nav-buttons">
+      <button class="btn login-btn">Login</button>
+      <a href="https://wa.me/917765805522" target="_blank">
+          <button class="btn join-btn">Join Now</button>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <div class="hero-content container">
+
+    <!-- LEFT -->
+    <div class="hero-side">
+      <img src="./images/img-1.png" alt="">
+      <p>Er. Sanjay Kumar Choudhary</p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="hero-center">
+      <h1>Cracking NEET is Not Luck.<br>It’s Strategy.</h1>
+      <p>Join Bihar’s fastest growing coaching for NEET & JEE aspirants</p>
+
+      <div class="hero-buttons">
+        <button class="primary-btn">Explore Courses</button>
+        <button class="secondary-btn">Join Now</button>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-side">
+      <img src="./images/img-1.png" alt="">
+      <p>NEET 2024 Topper</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="results" id="results">
+
+  <div class="container">
+
+    <h2 class="section-title">Our Achievers</h2>
+
+    <div class="achiever-section">
+
+<h3 class="achiever-title">NEET Qualified Students</h3>
+
+
+
+ <div class="achiever-grid" id="neetContainer"></div>
+
+
+
+</div>
+
+
+<div class="achiever-section">
+
+<h3 class="achiever-title">JEE Qualified Students</h3>
+
+
+
+ <div class="achiever-grid" id="jeeContainer"></div>
+
+
+
+</div>
+
+
+
+<div class="achiever-section">
+
+<h3 class="achiever-title">Class 12th Results</h3>
+
+
+
+<div class="achiever-grid" id="board12Container"></div>
+
+
+
+</div>
+
+<div class="achiever-section">
+
+<h3 class="achiever-title">Class 10th Results</h3>
+
+
+
+  <div class="achiever-grid" id="board10Container"></div>
+
+
+
+</div>
+
+</section>
+
+<!-- COURSE SECTION -->
+
+<section class="courses">
+
+  <div class="container">
+
+    <h2 class="section-title">Our Courses</h2>
+
+    <!-- 🔥 TABS -->
+    <div class="course-tabs">
+      <button class="tab-btn active" onclick="showCourse('jee')">IIT / JEE</button>
+      <button class="tab-btn" onclick="showCourse('neet')">NEET</button>
+      <button class="tab-btn" onclick="showCourse('junior')">Junior</button>
+    </div>
+
+    <!-- 🔥 COURSE CONTENT -->
+
+    <!-- JEE -->
+    <div id="jee" class="course-content active">
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <img src="./images/img-1.png">
+          <h3>Class 11th (JEE)</h3>
+          <button onclick="toggleDetails(this)">View Details</button>
+
+          <div class="course-details">
+            <p><b>Batch:</b> Parishram</p>
+            <p><b>Fees:</b> ₹50,000</p>
+            <p><b>Start:</b> 12 Dec 2026</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="./images/img-1.png">
+          <h3>Class 12th (JEE)</h3>
+          <button onclick="toggleDetails(this)">View Details</button>
+
+          <div class="course-details">
+            <p><b>Batch:</b> Lakshya</p>
+            <p><b>Fees:</b> ₹60,000</p>
+            <p><b>Start:</b> 10 Jan 2026</p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="./images/img-1.png">
+          <h3>Dropper (JEE)</h3>
+          <button onclick="toggleDetails(this)">View Details</button>
+
+          <div class="course-details">
+            <p><b>Batch:</b> Sankalp</p>
+            <p><b>Fees:</b> ₹70,000</p>
+            <p><b>Start:</b> 1 Feb 2026</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- NEET -->
+    <div id="neet" class="course-content">
+
+  <div class="course-grid">
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Class 11th (NEET)</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Batch: Arogya</p>
+        <p>Fees: ₹45,000</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Class 12th (NEET)</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Batch: Arogya</p>
+        <p>Fees: ₹45,000</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Dropper (NEET)</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Batch: Arogya</p>
+        <p>Fees: ₹45,000</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+    <!-- JUNIOR -->
+    <div id="junior" class="course-content">
+  <div class="course-grid">
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Class 8th</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Fees: ₹20,000</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Class 9th</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Fees: ₹20,000</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="./images/img-1.png">
+      <h3>Class 10th</h3>
+      <button onclick="toggleDetails(this)">View Details</button>
+
+      <div class="course-details">
+        <p>Fees: ₹20,000</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+<section class="testimonials">
+
+  <div class="container">
+
+    <h2 class="section-title">What Our Students Say</h2>
+
+    <div class="testimonial-grid">
+
+      <!-- TESTIMONIAL 1 -->
+      <div class="testimonial-card">
+        <img src="./images/img-1.png" alt="">
+        <p>"Best coaching for NEET preparation. Teachers are very supportive."</p>
+        <h4>Rahul Kumar</h4>
+      </div>
+
+      <!-- TESTIMONIAL 2 -->
+      <div class="testimonial-card">
+        <img src="./images/img-1.png" alt="">
+        <p>"Regular tests helped me improve my score consistently."</p>
+        <h4>Aman Singh</h4>
+      </div>
+
+      <!-- TESTIMONIAL 3 -->
+      <div class="testimonial-card">
+        <img src="./images/img-1.png" alt="">
+        <p>"I cleared NEET because of their proper guidance."</p>
+        <h4>Tathagat Awatar</h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="notice-section">
+
+  <div class="container notice-wrapper">
+
+    <!-- LEFT EMPTY SPACE -->
+    <div class="notice-left"></div>
+
+    <!-- RIGHT CARD -->
+    <div class="notice-right">
+
+      <h2 class="notice-title">Latest Notices</h2>
+
+      <div id="noticeContainer" class="notice-list"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section class="gallery">
+
+  <div class="container">
+
+    <h2 class="section-title">Our Classroom Moments</h2>
+
+    <div class="gallery-track">
+
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+
+      <!-- duplicate for smooth loop -->
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+      <img src="./images/img-1.png" alt="">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer class="footer" id="footer">
+
+  <div class="container footer-container">
+
+    <!-- COLUMN 1 -->
+    <div class="footer-col">
+      <h2 class="logo">CP</h2>
+      <p>Building Future NEET & JEE Toppers</p>
+      <p>Founder: Er. Sanjay Choudhary</p>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#results">Results</a>
+      <a href="about.html">About</a>
+      <a href="#footer">Contact</a>
+      <a href="/admin/admin.html">Admin Login</a>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <p>📞 7765805522</p>
+      <p>📧 skchaudhary@gmail.com</p>
+      <p>🕒 8 AM – 6 PM</p>
+      <p>📍 Madhubani, Bihar</p>
+    </div>
+
+    <!-- COLUMN 4 (MAP) -->
+    <div class="footer-col">
+      <h3>Our Location</h3>
+      <iframe 
+        src="https://www.google.com/maps?q=Madhubani,Bihar&output=embed"
+        width="100%" 
+        height="150" 
+        style="border:0; border-radius:10px;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    © 2026 Choudhary Pathshala | All Rights Reserved
+  </div>
+
+  
+
+</footer>
+<div class="admission-bar">
+  <div class="marquee">
+    📢 Admissions Open for NEET 2026 Batch | Limited Seats Available | Contact Now: 7765805522
+  </div>
+</div>
+
+<!-- 🔥 SCRIPTS ALWAYS AT BOTTOM -->
+
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAP8ajNwwfAmzHh4sID3FPpMvUOCL31dAY",
+  authDomain: "chaudhary-pathshala.firebaseapp.com",
+  projectId: "chaudhary-pathshala",
+  storageBucket: "chaudhary-pathshala.appspot.com",
+  messagingSenderId: "52426071454",
+  appId: "1:52426071454:web:a31bef4a675ba218994a8f"
+};
+
+const neetLeft = document.getElementById("neetLeft");
+const neetRight = document.getElementById("neetRight");
+
+const jeeLeft = document.getElementById("jeeLeft");
+const jeeRight = document.getElementById("jeeRight");
+
+const board10Left = document.getElementById("board10Left");
+const board10Right = document.getElementById("board10Right");
+
+const board12Left = document.getElementById("board12Left");
+const board12Right = document.getElementById("board12Right");
+
+
+
+
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+db.collection("results").get().then((snapshot)=>{
+
+  const neetList = [];
+  const jeeList = [];
+  const board10List = [];
+  const board12List = [];
+
+  snapshot.forEach((doc)=>{
+    const item = doc.data();
+
+    if(item.type === "neet") neetList.push(item);
+    else if(item.type === "jee") jeeList.push(item);
+    else if(item.type === "board10") board10List.push(item);
+    else if(item.type === "board12") board12List.push(item);
+  });
+
+  renderStudents(document.getElementById("neetContainer"), neetList);
+  renderStudents(document.getElementById("jeeContainer"), jeeList);
+  renderStudents(document.getElementById("board10Container"), board10List);
+  renderStudents(document.getElementById("board12Container"), board12List);
+
+});
+
+function renderStudents(container, students){
+
+  container.innerHTML = "";
+
+  let card;
+
+  students.forEach((item, index)=>{
+
+    // 🔥 har 3 students pe new card
+    if(index % 3 === 0){
+      card = document.createElement("div");
+      card.classList.add("achiever-card");
+      container.appendChild(card);
+    }
+
+    let photo = item.photo || "./Image/img-1.png";
+    let info = item.rank || item.marks;
+    let badge = item.topper ? `<span class="topper-badge">🏆</span>` : "";
+
+    const student = document.createElement("div");
+    student.classList.add("student");
+
+    student.innerHTML = `
+      <img src="${photo}">
+      <div class="student-info">
+        <b>${item.name} ${badge}</b>
+        <span>${info}</span>
+      </div>
+    `;
+
+    card.appendChild(student);
+  });
+}
+
+
+function toggleDetails(btn){
+
+  const card = btn.closest(".course-card");
+  const details = card.querySelector(".course-details");
+
+  // ❌ sab reset karo
+  document.querySelectorAll(".course-card").forEach(c=>{
+    c.classList.remove("active");
+  });
+
+  document.querySelectorAll(".course-details").forEach(d=>{
+    d.style.display = "none";
+  });
+
+  // ✅ current toggle
+  if(details.style.display === "block"){
+    details.style.display = "none";
+    btn.innerText = "View Details";
+  } else {
+    details.style.display = "block";
+    card.classList.add("active");
+    btn.innerText = "Hide Details";
+  }
+
+}
+
+// 🔥 COURSE TAB SWITCH FUNCTION
+function showCourse(type){
+
+  // ❌ sab content hide
+  document.querySelectorAll(".course-content").forEach(sec=>{
+    sec.classList.remove("active");
+  });
+
+  // ❌ sab buttons inactive
+  document.querySelectorAll(".tab-btn").forEach(btn=>{
+    btn.classList.remove("active");
+  });
+
+  // ✅ selected content show
+  document.getElementById(type).classList.add("active");
+
+  // ✅ button ko active karo
+  event.target.classList.add("active");
+
+  // 🔥 reset cards
+  document.querySelectorAll(".course-card").forEach(card=>{
+    card.classList.remove("active");
+  });
+
+  document.querySelectorAll(".course-details").forEach(d=>{
+    d.style.display = "none";
+  });
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* RESET (optional but recommended) */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+
+/* BODY */
+body{
+  background:#F8FAFC;
+  color:#0F172A;
+}
+
+/* CONTAINER */
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+/* ================= NAVBAR (same as main) ================= */
+
+.navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+  background:rgba(15,23,42,0.9);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+
+.logo{
+  color:#F59E0B;
+  font-size:24px;
+  font-weight:700;
+}
+
+.logo span{
+  color:white;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+}
+
+.nav-buttons{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  padding:8px 18px;
+  border-radius:25px;
+  border:none;
+  cursor:pointer;
+}
+
+.login-btn{
+  background:white;
+}
+
+.join-btn{
+  background:#F59E0B;
+  color:white;
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about-page{
+  padding:120px 20px 80px;
+}
+
+/* TITLE */
+.page-title{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:60px;
+}
+
+/* CONTENT LAYOUT */
+.about-content{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+/* IMAGE */
+.about-img img{
+  width:300px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.about-text{
+  max-width:500px;
+}
+
+.about-text h2{
+  color:#2563EB;
+  margin-bottom:15px;
+}
+
+.about-text p{
+  margin-bottom:15px;
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+  .about-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+}
