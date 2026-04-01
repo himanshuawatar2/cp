@@ -17,22 +17,24 @@
 <div class="navbar">
   <div class="container navbar-inner">
 
-    <div class="logo">CPP <span>Pathshala</span></div>
+    <div class="logo">CP <span>Pathshala</span></div>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#results">Results</a>
-      <a href="about.html">About</a>
-      <a href="#footer">Contact</a>
-    </div>
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#results">Results</a>
+    <a href="about.html">About</a>
+    <a href="#footer">Contact</a>
+</div>
 
-    <div class="nav-buttons">
-      <button class="btn login-btn">Login</button>
-      <a href="https://wa.me/917765805522" target="_blank">
-          <button class="btn join-btn">Join Now</button>
-      </a>
-    </div>
+<div class="nav-buttons">
+    <button class="btn login-btn">Login</button>
+    <a href="https://wa.me/917765805522" target="_blank">
+        <button class="btn join-btn">Join Now</button>
+    </a>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
   </div>
 </div>
@@ -43,10 +45,16 @@
   <div class="hero-content container">
 
     <!-- LEFT -->
-    <div class="hero-side">
-      <img src="./images/img-1.png" alt="">
-      <p> Sanjay Kumar Choudhary</p>
+<div class="hero-side">
+    <div class="profile-card">
+        <img src="./images/sanjay.png">
+
+        <div class="profile-bar">
+            <h4>Er. Sanjay Kumar Choudhary</h4>
+            <span>Founder & Mentor</span>
+        </div>
     </div>
+</div>
 
     <!-- CENTER -->
     <div class="hero-center">
@@ -54,18 +62,24 @@
       <p>Join Bihar’s fastest growing coaching for NEET & JEE aspirants</p>
 
       <div class="hero-buttons">
-        <button class="primary-btn">Explore Courses</button>
-        <button class="secondary-btn">Join Now</button>
+        <a href="#courses"><button class="primary-btn">Explore Courses</button></a>
+        
+        <a href="https://wa.me/917765805522" target="_blank"><button class="secondary-btn">Join Now</button></a>
+        
       </div>
     </div>
 
-    <!-- RIGHT -->
-    <div class="hero-side">
-      <img src="./images/img-1.png" alt="">
-      <p>NEET 2024 Topper</p>
-    </div>
+ <!-- RIGHT -->
+<div class="hero-side">
+    <div class="profile-card">
+        <img src="./images/tathagat.png">
 
-  </div>
+        <div class="profile-bar">
+            <h4>Tathagat Awatar</h4>
+            <span>NEET 2024 Topper</span>
+        </div>
+    </div>
+</div>
 
 </section>
 
@@ -131,7 +145,7 @@
 
 <!-- COURSE SECTION -->
 
-<section class="courses">
+<section class="courses" id="courses">
 
   <div class="container">
 
@@ -152,38 +166,38 @@
       <div class="course-grid">
 
         <div class="course-card">
-          <img src="./images/img-1.png">
+          <img src="./images/jee-11th.png">
           <h3>Class 11th (JEE)</h3>
           <button onclick="toggleDetails(this)">View Details</button>
 
           <div class="course-details">
-            <p><b>Batch:</b> Parishram</p>
-            <p><b>Fees:</b> ₹50,000</p>
-            <p><b>Start:</b> 12 Dec 2026</p>
+            <p><b>Batch:</b> Parishram 2.0</p>
+            <p><b>Fees:</b> ₹17,500/Year</p>
+            <!-- <p><b>Start:</b> 12 Dec 2026</p> -->
           </div>
         </div>
 
         <div class="course-card">
-          <img src="./images/img-1.png">
+          <img src="./images/jee-12th.png">
           <h3>Class 12th (JEE)</h3>
           <button onclick="toggleDetails(this)">View Details</button>
 
           <div class="course-details">
-            <p><b>Batch:</b> Lakshya</p>
-            <p><b>Fees:</b> ₹60,000</p>
-            <p><b>Start:</b> 10 Jan 2026</p>
+            <p><b>Batch:</b> Parishram 2.0</p>
+            <p><b>Fees:</b> ₹17,500/Year</p>
+            <!-- <p><b>Start:</b> 10 Jan 2026</p> -->
           </div>
         </div>
 
         <div class="course-card">
-          <img src="./images/img-1.png">
+          <img src="./images/iit-dropper.png">
           <h3>Dropper (JEE)</h3>
           <button onclick="toggleDetails(this)">View Details</button>
 
           <div class="course-details">
-            <p><b>Batch:</b> Sankalp</p>
-            <p><b>Fees:</b> ₹70,000</p>
-            <p><b>Start:</b> 1 Feb 2026</p>
+            <p><b>Batch:</b> Parivartan 2.0</p>
+            <p><b>Fees:</b> ₹22,500/Year</p>
+            <!-- <p><b>Start:</b> 1 Feb 2026</p> -->
           </div>
         </div>
 
@@ -197,35 +211,35 @@
   <div class="course-grid">
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/neet-11th.png">
       <h3>Class 11th (NEET)</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Batch: Arogya</p>
-        <p>Fees: ₹45,000</p>
+        <p><b>Batch:</b> Parishram 2.0</p>
+        <p><b>Fees:</b> ₹17,500/Year</p>
       </div>
     </div>
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/neet-12th.png">
       <h3>Class 12th (NEET)</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Batch: Arogya</p>
-        <p>Fees: ₹45,000</p>
+        <p><b>Batch:</b> Parishram 2.0</p>
+        <p><b>Fees:</b> ₹17,500/Year</p>
       </div>
     </div>
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/neet-dropper.png">
       <h3>Dropper (NEET)</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Batch: Arogya</p>
-        <p>Fees: ₹45,000</p>
+        <p><b>Batch:</b> Parivartan 2.0</p>
+        <p><b>Fees:</b> ₹22,500/Year</p>
       </div>
     </div>
 
@@ -238,32 +252,35 @@
   <div class="course-grid">
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/8th.png">
       <h3>Class 8th</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Fees: ₹20,000</p>
+        <p><b>Batch:</b> Yodha</p>
+        <p><b>Fees:</b> ₹12,500/Year</p>
       </div>
     </div>
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/9th.png">
       <h3>Class 9th</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Fees: ₹20,000</p>
+        <p><b>Batch:</b> Yodha</p>
+        <p><b>Fees:</b> ₹12,500/Year</p>
       </div>
     </div>
 
     <div class="course-card">
-      <img src="./images/img-1.png">
+      <img src="./images/10th.png">
       <h3>Class 10th</h3>
       <button onclick="toggleDetails(this)">View Details</button>
 
       <div class="course-details">
-        <p>Fees: ₹20,000</p>
+        <p><b>Batch:</b> Yodha</p>
+        <p><b>Fees:</b> ₹12,500/Year</p>
       </div>
     </div>
 
@@ -282,24 +299,26 @@
     <div class="testimonial-grid">
 
       <!-- TESTIMONIAL 1 -->
+
       <div class="testimonial-card">
-        <img src="./images/img-1.png" alt="">
-        <p>"Best coaching for NEET preparation. Teachers are very supportive."</p>
-        <h4>Rahul Kumar</h4>
+        <img src="./images/tathagat.png" alt="">
+        <p>"I got AIR-34 in NEET-2024 (715/720) because of their proper guidance."</p>
+        <h4>Tathagat Awatar</h4>
       </div>
+      
 
       <!-- TESTIMONIAL 2 -->
       <div class="testimonial-card">
-        <img src="./images/img-1.png" alt="">
-        <p>"Regular tests helped me improve my score consistently."</p>
-        <h4>Aman Singh</h4>
+        <img src="./images/devnath.png" alt="">
+        <p>"In proper guidance at Choudhary Pathshala, I scored 421/500 in Class 12th Board Exam (BSEB)"</p>
+        <h4>Devnath Choudhary</h4>
       </div>
 
       <!-- TESTIMONIAL 3 -->
       <div class="testimonial-card">
         <img src="./images/img-1.png" alt="">
-        <p>"I cleared NEET because of their proper guidance."</p>
-        <h4>Tathagat Awatar</h4>
+        <p>"Best coaching for NEET preparation. Teachers are very supportive."</p>
+        <h4>Rahul Kumar</h4>
       </div>
 
     </div>
@@ -339,16 +358,21 @@
 
     <div class="gallery-track">
 
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
+      <img src="./images/6.jpeg" alt="">
+      <img src="./images/5.jpeg" alt="">
+      <img src="./images/7.jpeg" alt="">
+      <img src="./images/12.jpeg" alt="">
 
       <!-- duplicate for smooth loop -->
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
-      <img src="./images/img-1.png" alt="">
+      <img src="./images/1.jpeg" alt="">
+      <img src="./images/2.jpeg" alt="">
+      <img src="./images/3.jpeg" alt="">
+      <img src="./images/4.jpeg" alt="">
+
+      <img src="./images/6.jpeg" alt="">
+      <img src="./images/5.jpeg" alt="">
+      <img src="./images/7.jpeg" alt="">
+      <img src="./images/12.jpeg" alt="">
 
     </div>
 
@@ -406,6 +430,9 @@
   <!-- BOTTOM -->
   <div class="footer-bottom">
     © 2026 Choudhary Pathshala | All Rights Reserved
+    <br>
+    <br>
+    <p style="font-style: italic; opacity: 20%;">Developed by Himanshu Awatar (Alumni of Choudhary Pathshala)</p>
   </div>
 
   
@@ -566,6 +593,21 @@ function showCourse(type){
   });
 
 }
+
+
+function toggleMenu(){
+    const menu = document.querySelector(".nav-links");
+    menu.classList.toggle("active");
+}
+
+document.addEventListener("click", function(e){
+    const menu = document.querySelector(".nav-links");
+    const toggle = document.querySelector(".menu-toggle");
+
+    if(!menu.contains(e.target) && !toggle.contains(e.target)){
+        menu.classList.remove("active");
+    }
+});
 
 </script>
 

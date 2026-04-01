@@ -37,10 +37,10 @@ body{
 }
 
 .navbar-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
 }
 
 /* LOGO */
@@ -101,17 +101,69 @@ body{
   transform:scale(1.05);
 }
 
+.menu-toggle{
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links::before{
+    content: "";
+    position: fixed;
+    left: -30%;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+}
+
+/* MOBILE FIX */
+@media(max-width:900px){
+
+    .menu-toggle{
+    display: block;
+}
+
+    .nav-links{
+    position: fixed;
+    top: 70px; /* 🔥 navbar ke niche */
+    right: -100%;
+    height: 250px;
+    width: 250px; /* 🔥 FIX SIZE */
+
+    background: #0F172A;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* 🔥 top align */
+    padding-top: 40px;
+    gap: 20px;
+
+    transition: right 0.3s ease;
+}
+
+.nav-links.active{
+    right: 0;
+}
+
+}
+
 /* ================= HERO ================= */
 
+
 .hero{
-  height:100vh;
+  min-height:100vh;
+  height: auto;
   background: linear-gradient(135deg, #0F172A, #1E293B, #2563EB);
   display:flex;
   align-items:center;
   justify-content:center;
   position:relative;
-  overflow:hidden;
+  overflow:visible;
   padding-top:80px;
+  padding-bottom:30px;
 }
 
 /* glow effect */
@@ -136,7 +188,8 @@ body{
 
 /* SIDE IMAGES */
 .hero-side{
-  text-align:center;
+    width: 100%;
+    max-width: 220px;
 }
 
 .hero-side img{
@@ -195,27 +248,89 @@ body{
   transition:0.3s;
 }
 
+/* CARD */
+.profile-card{
+    width: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* IMAGE */
+.profile-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    /* filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4)); */
+    object-position: 30% center;
+}
+
+/* 🔥 WHITE INFO BAR */
+.profile-bar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px; /* 🔥 SAME HEIGHT FIX */
+    background: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+
+    padding: 8px; /* reduce padding */
+    text-align: center;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+.profile-bar h4{
+    font-size: 13px;
+    font-weight: 600;
+    color: #0F172A;
+
+    white-space: nowrap; /* 🔥 prevent line break */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-bar span{
+    font-size: 11px;
+    color: #64748B;
+}
+
 .primary-btn:hover,
 .secondary-btn:hover{
   transform:scale(1.05);
+
 }
 
 /* ================= RESPONSIVE ================= */
 
 @media(max-width:900px){
 
-  .hero-content{
-    flex-direction:column;
-    gap:30px;
-  }
+.hero-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
 
+.hero-side{
+    display: flex;
+    justify-content: center;
+}
   .hero-center h1{
     font-size:32px;
   }
 
-  .nav-links{
-    display:none;
-  }
 
 }
 
